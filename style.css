@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+
+
+body{
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(23,32,75,1) 100%);
+}
+
+header{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Hanalei Fill', cursive;
+    margin-bottom: 30px;
+}
+
+main{
+    text-align: center;
+}
+
+
+img{
+    margin-bottom: 30px;
+    width: 220px;
+    border-radius: 50px;
+}
+
+
+
+.button-one {
+  --b: 3px;   
+  --s: .45em; 
+  --color: #fff;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .9em;
+  font-size: 20px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-one:hover,
+.button-one:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-one:active {
+  background: var(--color);
+  color: #fff;
+}
